@@ -201,8 +201,20 @@ h1 {
   color: var(--usd);
 }
 
+.hero-total .money-ars,
+.subtotal-card .money-ars {
+  color: var(--ars);
+}
+
+.hero-total .money-usd,
+.subtotal-card .money-usd {
+  color: var(--usd);
+}
+
 .money-pair {
   min-width: 160px;
+  display: grid;
+  gap: 2px;
 }
 
 .money-pair .money-ars,
