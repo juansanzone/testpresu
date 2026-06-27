@@ -213,10 +213,7 @@ h1 {
 
 .money-pair {
   min-width: 160px;
-  display: inline-flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .money-pair .money-ars,
@@ -224,6 +221,10 @@ h1 {
   display: inline;
   line-height: 1.45;
   white-space: nowrap;
+}
+
+.money-pair .money-usd {
+  margin-left: 10px;
 }
 
 .table-card {
