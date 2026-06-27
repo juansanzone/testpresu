@@ -298,7 +298,7 @@
             row.querySelector(".subtotal-usd").textContent = usdFormatter.format(subtotalArs / rate);
           });
 
-          document.querySelectorAll("[data-subtotal-ars], [data-total-ars]").forEach((card) => {
+          document.querySelectorAll(".subtotal-card[data-subtotal-ars], .hero-total[data-total-ars]").forEach((card) => {
             const amount = Number(card.dataset.subtotalArs || card.dataset.totalArs);
             card.querySelector(".money-ars").textContent = arsFormatter.format(amount);
             card.querySelector(".money-usd").textContent = usdFormatter.format(amount / rate);
