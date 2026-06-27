@@ -45,6 +45,11 @@ a {
   align-items: start;
 }
 
+.hero-side {
+  display: grid;
+  gap: 18px;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--brand);
@@ -66,27 +71,6 @@ h1 {
   font-size: 1.15rem;
   line-height: 1.6;
   color: var(--muted);
-}
-
-.hero-total {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 28px;
-  padding: 18px 22px;
-  background: var(--surface);
-  border: 1px solid rgba(123, 52, 31, 0.12);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-}
-
-.hero-total span {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.hero-total strong {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
 }
 
 .hero-total em,
@@ -191,6 +175,22 @@ h1 {
 .subtotal-card strong,
 .subtotal-card em {
   display: block;
+}
+
+.hero-total {
+  min-width: 100%;
+}
+
+.total-card span {
+  font-size: 0.9rem;
+}
+
+.total-card strong {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.total-card em {
+  font-size: 1.15rem;
 }
 
 .money-ars {
