@@ -213,13 +213,15 @@ h1 {
 
 .money-pair {
   min-width: 160px;
-  display: grid;
-  gap: 2px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 .money-pair .money-ars,
 .money-pair .money-usd {
-  display: block;
+  display: inline;
   line-height: 1.45;
   white-space: nowrap;
 }
