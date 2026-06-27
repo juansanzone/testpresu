@@ -36,6 +36,13 @@ a {
   padding: 72px 0 40px;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 28px;
+  align-items: start;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--brand);
@@ -81,6 +88,39 @@ h1 {
   color: var(--brand-dark);
 }
 
+.hero-total em,
+.subtotal-card em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.fx-card {
+  padding: 22px;
+}
+
+.exchange-input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font: inherit;
+  font-size: 1.6rem;
+  color: var(--brand-dark);
+  background: #fff;
+}
+
+.exchange-input:focus {
+  outline: 2px solid rgba(163, 75, 42, 0.18);
+  border-color: var(--brand);
+}
+
+.fx-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .card,
 .table-card {
   background: var(--surface);
@@ -113,7 +153,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 8px 16px;
-  align-items: end;
+  align-items: stretch;
   margin-bottom: 16px;
 }
 
@@ -129,6 +169,29 @@ h1 {
 .section-head strong {
   font-size: 1.3rem;
   color: var(--brand-dark);
+}
+
+.subtotal-card {
+  min-width: 245px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #fff2dd 0%, #f8e0bf 100%);
+  border: 1px solid rgba(123, 52, 31, 0.12);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.subtotal-card span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.subtotal-card strong,
+.subtotal-card em {
+  display: block;
 }
 
 .table-card {
@@ -166,6 +229,10 @@ tbody tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
   .meta {
     grid-template-columns: 1fr;
   }
